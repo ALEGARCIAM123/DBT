@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_franchise
+    description: "Modelo de staging para la tabla franchise."
+    columns:
+      - name: franchise_id
+        description: "Identificador único para la franquicia."
+
+  - name: l1_franchise
+    description: "Modelo de nivel 1 para la tabla franchise."
+    columns:
+      - name: franchise_id
+        description: "Identificador único para la franquicia."
+        tests:
+          - unique
+          - not_null
